@@ -1,0 +1,59 @@
+@use '/src/styles/breakpoints';
+.pricing {
+    padding-top: clamp(4rem, 3.6rem + 2vw, 5rem);
+}
+
+.pricing_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+    max-width: 1120px;
+    margin: 0 auto;
+
+    h1 {
+        font-size: clamp(2.5rem, 2.1rem + 2vw, 3.5rem);
+        line-height: 1.3;
+        text-align: left;
+        font-weight: 450;
+        color: #000000;
+        margin-bottom: 1rem;
+    }
+
+    .pricing_description {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 1rem;
+        // max-width: 600px;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    .pricing_plans {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        width: 100%;
+        margin-top: 2rem;
+
+        li {
+            list-style:disc;
+            font-size: 1rem;
+            color: #555;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: .6rem;
+
+            p {
+                font-size: 1.2rem;
+                color: #090909;
+                line-height: 1.5;
+            }
+        }
+    }
+}

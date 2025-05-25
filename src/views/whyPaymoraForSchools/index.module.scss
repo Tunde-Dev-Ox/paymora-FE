@@ -1,0 +1,78 @@
+@use '/src/styles/breakpoints';
+.why_paymora_for_schools {
+    padding-top: clamp(4rem, 3.6rem + 2vw, 5rem);
+}
+
+.why_paymora_for_schools_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+    max-width: 1120px;
+    margin: 0 auto;
+
+    h1 {
+        font-size: clamp(2.5rem, 2.1rem + 2vw, 3.5rem);
+        font-weight: 450;
+        color: #000000;
+        margin-bottom: 1rem;
+        max-width: 800px;
+        text-align: left;
+        line-height: 1.2;
+    }
+
+    .why_paymora_for_schools_description {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 1rem;
+        // max-width: 600px;
+        line-height: 1.5;
+        text-align: left;
+        margin-bottom: 3rem;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+}
+
+
+.why_paymora_for_schools_main_content {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 4rem;
+    text-align: left;
+
+    h2 {
+        font-size: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+        font-weight: 500;
+        color: #000000;
+        margin-bottom: .5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+        color: #555;
+        line-height: 1.5;
+    }
+
+    ul {
+        list-style: disc;
+        padding-left: 20px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+
+        li {
+            font-size: 1.1rem;
+            color: #555;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: .6rem;
+        }
+    }
+}
